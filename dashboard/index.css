@@ -1,0 +1,242 @@
+/* Copyright 30-12-2021 Maxime Sahuc */
+
+:root {
+    --background-color : #272727;
+    --background-color-lighter: #1c1c1d;
+    --background-color-darker: #1b1d2454;
+
+    --text-color: #eaeaea;
+
+    --border-radius: 13px;
+    --margin: 10px;
+    --pannels-size: 280px;
+
+    --spotify-cover-size: 270px;
+    --spotify-auteur-color: #bebec4;
+
+    --article-image-size: 54px;
+    --article-title-color: #a3a3ab;
+
+    --temp-color: #4286df;
+    --humi-color: #4ebfbd;
+}
+
+body {
+    font-family: Arial;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: none;
+}
+
+.container {
+    background-color: var(--background-color-lighter);
+    border-width: 1px;
+    border-color: var(--background-color-darker);
+    border-style: solid;
+    border-radius: var(--border-radius);
+    -moz-box-shadow: 0px 0px 16px 3px var(--background-color-darker);
+    box-shadow: 0px 0px 16px 3px var(--background-color-darker);
+    overflow: hidden;
+    padding-left: 10px;
+    margin-top: var(--margin);
+}
+
+#infos {
+    width: var(--pannels-size);
+}
+
+#infos h1 {
+    font-size: 50px;
+}
+
+#infos h1, h2 {
+    font-weight: lighter;
+    padding: 0%;
+    padding-top: -10px;
+    height: 18px;
+}
+
+#infos h1 {
+    margin-top: 2px;
+}
+
+#infos h2 {
+    padding-top: 4px;
+}
+
+#actus {
+    position: fixed;
+    top: 454px;
+    width: var(--pannels-size);
+    height: 620px;
+}
+
+.article {
+    padding-top: 6px;
+}
+
+.article h3 {
+    color: var(--article-title-color);
+    text-transform: uppercase;
+    font-size: 85%;
+    margin-top: 0px;
+    letter-spacing: 0.01em;
+}
+
+#alaune {
+    margin-top: var(--margin);
+}
+
+.info_article{
+    margin-top: -38px;
+    display: flex;
+}
+
+.info_article h4 {
+    margin-top: 25px;
+    font-size: 95%;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 208px;
+    height: var(--article-image-size);
+}
+
+.info_article img{
+    width: var(--article-image-size);
+    height: var(--article-image-size);
+    border-radius: 9px;
+    object-fit: cover;
+    margin-top: 25px;
+    position: fixed;
+    margin-left: 217px;
+}
+
+#meteo {
+    width: var(--pannels-size);
+    position: fixed;
+    right: var(--margin);
+    top: 0px;
+    height: 582px;
+}
+
+#meteo h1 {
+    font-weight: lighter;
+}
+
+#temp {
+    font-size: 70px;
+    margin-top: -22px;
+}
+
+#meteo_infos {
+    margin-top: -43px;
+}
+
+#meteo p {
+    margin-top: -10px;
+}
+
+.center {
+    text-align: center;
+}
+
+#spotify {
+    position: fixed;
+    width: var(--pannels-size);
+}
+
+#cover_musique {
+    width: var(--spotify-cover-size);
+    height: var(--spotify-cover-size);
+    border-radius: 9px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-right: var(--margin);
+}
+
+#titre_musique {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#auteur_musique {
+    color: var(--spotify-auteur-color);
+    margin-top: -15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#infos_musique {
+    margin-top: -17px;
+}
+
+#spotify {
+    height: 335px;
+}
+
+#infos_appart {
+    text-align: center;
+}
+
+#infos_appart h3 {
+    margin-top: var(--margin);
+    font-style: bold;
+}
+
+#infos_appart h1 {
+    color: var(--text-color);
+    margin-top: -12px;
+}
+
+#temp_appart {
+    position: fixed;
+    width: var(--pannels-size);
+    right: var(--margin);
+    top: 595px;
+    height: 81px;
+}
+
+#humi_appart {
+    position: fixed;
+    width: var(--pannels-size);
+    right: var(--margin);
+    top: 689px;
+    height: 81px;
+}
+
+#temp_appart {
+    color:var(--temp-color);
+}
+
+#humi_appart {
+    color:var(--humi-color);
+}
+
+#covid {
+    position: fixed;
+    top: 783px;
+    right: var(--margin);
+    width: var(--pannels-size);
+    height: 291px;
+}
+
+#titre_covid {
+    margin-top: var(--margin);
+}
+
+#graph_covid {
+    position: fixed;
+    margin-top: -60px;
+    margin-left: -5px;
+}
+
+text {
+    fill: var(--text-color);
+}
